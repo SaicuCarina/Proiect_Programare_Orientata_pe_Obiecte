@@ -22,7 +22,7 @@ int main()
 
     Agentie_de_turism ag;
 
-
+    vector<shared_ptr<Oferta>> oferta;
 
     Oferta of[50];
     int n;

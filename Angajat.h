@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Angajat : public Persoana
+class Angajat : public virtual Persoana
 {
 private:
 
@@ -43,7 +43,5 @@ public:
 
 
 };
-
-
 
 #endif

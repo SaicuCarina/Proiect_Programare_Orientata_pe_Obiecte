@@ -4,11 +4,11 @@
 #include <string>
 #include <memory>
 #include "Persoana.h"
-#include "IOStream.h"
+#include "IOStream_.h"
 
 using namespace std;
 
-class Client : public Persoana
+class Client : public virtual Persoana
 {
 private:
     std::string e_mail;

@@ -64,6 +64,4 @@ void Persoana::Afla_nume() const
     cout<<endl;
 }
 
-
-
 Persoana::~Persoana()=default;

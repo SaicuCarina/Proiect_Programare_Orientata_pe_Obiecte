@@ -28,17 +28,17 @@ std::shared_ptr<Persoana> Agentie::Gaseste_pers(const std::string &nume, const s
 }
 
 
-//std::vector<std::shared_ptr<Angajat>> Agentie::Get_Angajati() {
-//    std::vector<std::shared_ptr<Angajat>> ang;
-//
-//    for (auto &per : pers)
-//    {
-//        if (typeid(*per) == typeid(Angajat))
-//            ang.push_back(std::dynamic_pointer_cast<Angajat>(per));
-//    }
-//
-//    return ang;
-//}
+std::vector<std::shared_ptr<Angajat>> Agentie::Get_Angajati() {
+    std::vector<std::shared_ptr<Angajat>> ang;
+
+    for (auto &per : pers)
+    {
+        if (typeid(*per) == typeid(Angajat))
+            ang.push_back(std::dynamic_pointer_cast<Angajat>(per));
+    }
+
+    return ang;
+}
 
 std::vector<std::shared_ptr<Client>> Agentie::Get_Clienti() {
     std::vector<std::shared_ptr<Client>> cli;

@@ -2,8 +2,6 @@
 #include "Agentie_de_turism.h"
 #include "Persoana.h"
 
-
-
 using namespace std;
 
 Agentie_de_turism::Agentie_de_turism() {};
