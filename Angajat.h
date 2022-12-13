@@ -26,8 +26,6 @@ public:
 
     void setSalariu(float salariu_);
 
-//    static void citire_angajati(int m);
-
     static void Cit_Afis_Angajati(int m, Angajat ang[]);
 
     Angajat& operator=(const Angajat& rhs);

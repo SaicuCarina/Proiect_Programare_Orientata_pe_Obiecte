@@ -38,6 +38,8 @@ public:
 
     static std::shared_ptr<Oferta> Gaseste_Oferta(const std::string &destinatie);
 
+    ~Agentie();
+
 };
 
 #endif

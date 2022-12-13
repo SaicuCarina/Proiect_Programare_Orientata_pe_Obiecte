@@ -25,9 +25,9 @@ public:
     void Print(std::ostream &os) const override;
 };
 
-const char what()noexcept;
-
-void Print(std::ostream &os);
+//const char what()noexcept;
+//
+//void Print(std::ostream &os);
 
 
 class Persoana : public IOStream

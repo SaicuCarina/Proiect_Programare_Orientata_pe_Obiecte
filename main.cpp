@@ -89,7 +89,7 @@ int main()
         cout<<"0.Exit"<<endl;
         cout<<endl;
 
-        cout<<"Tema 1"<<endl;
+        cout<<"Oferta-Agentie_de_turism"<<endl;
         cout<<endl;
 
         cout<<"1.Afisarea constructorul de initializare!"<<endl;
@@ -101,7 +101,8 @@ int main()
 
         cout<<endl;
 
-        cout<<"Tema 2"<<endl;
+        cout<<"Mostenire-Persoana->Aangajat+Client"<<endl;
+        cout<<"Clasa cu liste de persoane(angajati si clienti) si oferte"<<endl;
         cout<<endl;
 
         cout<<"7.Afisarea constructorul de initializare!"<<endl;
@@ -218,6 +219,7 @@ int main()
             case 7:
             {
                 cout<<"Constructorul de initializare are vlaorile: "<<endl;
+                cout<<endl;
 
                 angajat.setNume("Grigore");
                 angajat.setPrenume("Florin");
@@ -311,7 +313,7 @@ int main()
             case 14:
             {
                 try{
-                    Agentie::Gaseste_pers("Pop", "David");
+                    Agentie::Gaseste_pers("Anghel", "Tudor");
 
                 }catch(const Nu_avem_pers &err)
                 {
@@ -343,16 +345,6 @@ int main()
             }
             case 16:
             {
-                try{
-                    Agentie::Gaseste_Oferta("Croatia");
-
-                }catch(const Nu_avem_oferte &err)
-                {
-                    std::cout<<"Nu s-a gasit oferta cu destinatia cautata!"<<endl;
-                    break;
-                }
-                std::cout<<"Oferta a fost gasita cu succes!"<<endl;
-
                 try{
                     Agentie::Gaseste_Oferta("Malta");
 

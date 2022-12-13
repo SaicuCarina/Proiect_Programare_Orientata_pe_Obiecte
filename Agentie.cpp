@@ -13,7 +13,6 @@ std::vector<std::shared_ptr<Oferta>> Agentie::ofer;
 void Agentie::Adauga_Persoana(std::shared_ptr<Persoana> per)
 {
     pers.push_back(per);
-
 }
 
 std::shared_ptr<Persoana> Agentie::Gaseste_pers(const std::string &nume, const std::string &prenume)
@@ -68,3 +67,4 @@ std::shared_ptr<Oferta> Agentie::Gaseste_Oferta(const std::string &destinatie)
 
     throw Nu_avem_oferte();
 }
+Agentie::~Agentie()=default;
