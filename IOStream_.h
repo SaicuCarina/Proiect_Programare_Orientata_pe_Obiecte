@@ -6,15 +6,15 @@
 using namespace std;
 
 
-class IOStream{
+class IOStream {
 protected:
-    virtual void Print(std::ostream& os) const=0;
+    virtual void Print(std::ostream &os) const = 0;
 
     virtual ~IOStream();
 
-    friend std::ostream& operator<<(std::ostream& os, const IOStream& obj);
+    friend std::ostream &operator<<(std::ostream &os, const IOStream &obj);
 };
 
-std::ostream& operator<<(std::ostream& os, const IOStream& obj);
+std::ostream &operator<<(std::ostream &os, const IOStream &obj);
 
 #endif

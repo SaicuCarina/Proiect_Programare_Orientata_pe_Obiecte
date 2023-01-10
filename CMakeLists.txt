@@ -3,4 +3,4 @@ project(untitled3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled3 main.cpp Oferta.cpp Oferta.h Agentie_de_turism.cpp Agentie_de_turism.h Persoana.cpp Persoana.h Client.cpp Client.h Angajat.cpp Angajat.h cmake-build-debug/IOStream.cpp cmake-build-debug/IOStream.h Agentie.cpp Agentie.h IOStream_.cpp IOStream_.h)
+add_executable(untitled3 main.cpp Oferta.cpp Oferta.h Agentie_de_turism.cpp Agentie_de_turism.h Persoana.cpp Persoana.h Client.cpp Client.h Angajat.cpp Angajat.h cmake-build-debug/IOStream.cpp cmake-build-debug/IOStream.h Agentie.cpp Agentie.h IOStream_.cpp IOStream_.h Generare_ID.cpp Generare_ID.h)

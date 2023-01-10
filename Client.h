@@ -8,8 +8,7 @@
 
 using namespace std;
 
-class Client : public virtual Persoana
-{
+class Client : public virtual Persoana {
 private:
     std::string e_mail;
 
@@ -29,11 +28,13 @@ public:
 
     void Afla_nume() const override;
 
+    static void Cit_Cli(int p, Client cli[]);
+
     static void Cit_Afis_Clienti(int p, Client cli[]);
 
-    Client& operator=(const Client& rhs);
+    Client &operator=(const Client &rhs);
 
-    void Print(std::ostream& os) const override;
+    void Print(std::ostream &os) const override;
 
     ~Client();
 

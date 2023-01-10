@@ -10,11 +10,13 @@
 
 using namespace std;
 
-class Oferta
-{
+class Oferta {
+
+    int id;
     std::string destinatie; ///pentru locatiile formate din mai multe cuvinte, spatiile vor fi inlocuite cu "_"
     float pret; /// in euro
     int locuridisponibile; ///locuri disponibile, maximul pestru oferta respectiva
+
 public:
 
     Oferta();
@@ -38,26 +40,29 @@ public:
 
     void citire_oferta();
 
+    static void Afis(Oferta of);
+
     void afisare_oferta();
 
-    Oferta& operator=(const Oferta &rhs);
+    Oferta &operator=(const Oferta &rhs);
+
+    static void Cit_Ofe(int p, Oferta of[]);
 
     ~Oferta();
 
 };
 
-
-class Nu_avem_oferte : public std::exception, public IOStream{
+class Nu_avem_oferte : public std::exception, public IOStream {
 public:
 
     virtual ~Nu_avem_oferte();
 
-    const char* what() const noexcept override;
+    const char *what() const noexcept override;
 
     void Print(std::ostream &os) const override;
 };
 
-const char what()noexcept;
+const char what() noexcept;
 
 void Print(std::ostream &os);
 

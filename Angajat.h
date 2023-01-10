@@ -8,8 +8,7 @@
 
 using namespace std;
 
-class Angajat : public virtual Persoana
-{
+class Angajat : public virtual Persoana {
 private:
 
     float salariu;
@@ -26,18 +25,19 @@ public:
 
     void setSalariu(float salariu_);
 
+    static void Cit_Ang(int m, Angajat ang[]);
+
     static void Cit_Afis_Angajati(int m, Angajat ang[]);
 
-    Angajat& operator=(const Angajat& rhs);
+    Angajat &operator=(const Angajat &rhs);
 
     Tip_Persoana GetTip_Persoana() const override;
 
     void Afla_nume() const override;
 
-    void Print(std::ostream& os) const override;
+    void Print(std::ostream &os) const override;
 
     ~Angajat();
-
 
 
 };
