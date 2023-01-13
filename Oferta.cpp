@@ -59,7 +59,7 @@ void Oferta::citire_oferta() {
 }
 
 void Oferta::afisare_oferta() {
-    cout<<"ID: "<< id << endl;
+    cout << "ID: " << id << endl;
     std::cout << "Destinatia: " << destinatie << endl;
     cout << "Pretul: " << pret << " euro " << endl;
     cout << "Locurile disponibile pentru aceasta oferta: " << locuridisponibile << endl;

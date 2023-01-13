@@ -155,7 +155,7 @@ int main() {
         cout << endl;
 
         int roll;
-        cout << "Introduce un numar de la 1 la 16:";
+        cout << "Introduce un numar de la 1 la 20:";
         cout << endl;
         cin >> roll;
         switch (roll) {
@@ -442,8 +442,7 @@ int main() {
 
                 break;
             }
-            case 20:
-            {
+            case 20: {
                 Oferta oferta[3];
 
                 oferta[0].setDestinatie("Malta");
@@ -458,14 +457,14 @@ int main() {
                 oferta[2].setPret(1000);
                 oferta[2].setLocuridisponibile(4);
 
-                for(int i=0; i<3; i++){
+                for (int i = 0; i < 3; i++) {
                     oferta[i].afisare_oferta();
                 }
 
                 break;
             }
             default: {
-                cout << "Nu ai introdus un numar intre 1 si 16!";
+                cout << "Nu ai introdus un numar intre 1 si 20!";
                 break;
             }
             case 0:
